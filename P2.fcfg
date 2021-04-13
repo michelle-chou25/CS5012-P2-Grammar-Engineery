@@ -1,56 +1,59 @@
-S -> NP[NUM=?n] VP[NUM=?n]
-
-#when do Lisa and Bart wear shoes
+S -> NP[NUM=?n, PER=?p] VP[NUM=?n, TENSE = ?t, PER=?p]
+# when do Lisa and Bart wear shoes
 S -> WH AUX[SUBCAT=aux, NUM = 'pl'] SUBS[SUBCAT=?rest, NUM=?n, PER=?p]
-
-S -> WH AUX[NUM=?n, PER=?p] NP[NUM=?n, PER=?p] VP[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]]
-S -> WH NP[SUBCAT=[HEAD=[NUM=?n, PER=?p]]] VP[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]] SUBS[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]]
+S -> WH AUX[NUM=?n, PER=?p] NP[NUM=?n, PER=?p] VP[NUM=?n, TENSE = ?t, PER=?p]
+S -> WH NP[SUBCAT=[HEAD=[NUM=?n, PER=?p]]] VP[NUM=?n, TENSE = ?t, PER=?p] SUBS[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]]
 S -> WH AUX[NUM=?n, PER=?p] SUBS[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]]
 S -> SUBS[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]] CONJ_S[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]]
-S -> NP MOD_P V[TENSE=pastpart, SUBCAT=[TAIL=nil]]
 S -> ProperNoun[NUM=?n, PER=?p] MOD_P V[TENSE=pastpart, SUBCAT=[HEAD=np,TAIL=nil]] ProperNoun[NUM=?n, PER=?p]
 S -> WH NP[NUM=?n, PER=?p] AUX[SUBCAT=aux, NUM = 'sg', PER = 3] NP[NUM=?n, PER=?p] VP[SUBCAT=?rest, NUM=?n, TENSE = ?t, PER=?p]
-S -> WH AUX[SUBCAT=aux, NUM = 'sg', PER = 3] NP[NUM=?n, PER=?p]  VP[SUBCAT=?args, NUM=?n, TENSE = ?t, PER=?p]  PP[NUM=?n, PER=?p, TENSE = ?t]
-S -> WH NP[NUM=?n, PER=?p] AUX[SUBCAT=aux, NUM = 'sg', PER = 3] NP[SUBCAT=[HEAD=[NUM=?n, PER=?p]]] VP[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]]
-S -> SUBS[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]] V[SUBCAT=?args, TENSE = ?t, NUM=?n, PER=?p] NPARG[CAT=?arg, NUM=?n, PER=?p, TENSE=?t]
-#what salad does Bart think Homer serves Lisa
+S -> WH NP[NUM=?n, PER=?p] AUX[SUBCAT=aux, NUM = 'sg', PER = 3] NP[SUBCAT=[HEAD=[NUM=?n, PER=?p]]] VP[NUM=?n, TENSE = ?t, PER=?p]
+#what does Lisa put in the kitchen
 S -> WH NP[NUM=?n, PER=?p] AUX[NUM=?n, PER=?p] NP[NUM=?n, PER=?p] VP[SUBCAT=?rest, TENSE = ?t, NUM=?n, PER=?p] SUBS[SUBCAT=?rest, NUM?=n, PER=?p]
-S -> NP[NUM=?n, PER=?p] VP[SUBCAT=?rest, TENSE = ?t, NUM=?n, PER=?p] SUBS[SUBCAT=?rest, NUM?=n, PER=?p]
+S -> NP[NUM=?n, PER=?p] VP[NUM=?n, TENSE = ?t, PER=?p] SUBS[SUBCAT=?rest, NUM?=n, PER=?p]
+#what salad does Bart serve
+S -> WH NP[NUM=?n, PER=?p] AUX[NUM=?n, PER=?p] NP[NUM=?n, PER=?p] V[FORM=pres, SUBCAT=intrans]
+S -> NP[NUM=?n, PER=?p] MOD_P VP[NUM=?n, TENSE = ?t, PER=?p]
+S -> WH AUX[SUBCAT=aux, NUM = 'sg', PER = 3] NP[NUM=?n, PER=?p]  V[FORM=pres, SUBCAT=intrans]  PP[NUM=?n, PER=?p, TENSE = ?t]
+
+
 
 # subsentence
-SUBS[SUBCAT=?rest, NUM?=n, PER=?p] -> NP[SUBCAT=[HEAD=[NUM=?n, PER=?p]]] V[SUBCAT=?args, TENSE = ?t, NUM=?n, PER=?p]
 SUBS[SUBCAT=?rest, NUM=?n, PER=?p] -> NP[SUBCAT=[HEAD=[NUM=?n, PER=?p]]] VP[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]]
 SUBS[SUBCAT=?rest, NUM=?n, PER=?p] -> SUBS[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]] NP[NUM=?n, PER=?p]
 SUBS[SUBCAT=?rest, NUM?=n, PER=?p] -> NP[NUM=?n, PER=?p] SUBS[SUBCAT=?rest, NUM?=n, PER=?p]
-
-
-# conjunction of sentence
-CONJ_S[SUBCAT=?rest, NUM?=n, PER=?p] -> NP[SUBCAT=[HEAD=[NUM=?n, PER=?p]]] VP[SUBCAT=[HEAD=?arg, TAIL=?rest, TENSE=?t, NUM=?n, PER=?p]] NP[SUBCAT=[HEAD=[NUM=?n, PER=?p]]] CONJ VP[SUBCAT=[HEAD=?arg, TAIL=?rest, TENSE=?t, NUM=?n, PER=?p]] NP[SUBCAT=[HEAD=[NUM=?n, PER=?p]]]
 
 
 NP[NUM=?n, PER=?p] -> ProperNoun[NUM=?n, PER=?p]
 NP[NUM=?n, PER=?p] -> NP[NUM=?n, PER=?p] PP[NUM=?n, PER=?p]
 NP[NUM=?n, PER=?p] -> DET Noun[NUM=?n, PER=?p]
 NP[NUM=?n, PER=?p] -> ADJP[SUBCAT=?rest, TENSE = ?t, NUM=?n, PER=?p] NP[NUM=?n, PER=?p]
-NP[NUM='pl', PER=3, TENSE = pres] -> ProperNoun[NUM=?n, PER=?p] CONJ ProperNoun[NUM=?n, PER=?p]
 NP[NUM=?n, PER=?p] -> Noun[num=sg]
 NP[NUM=?n, PER=?p] -> ProperNoun[NUM=?n, PER=?p] CONJ ProperNoun[NUM=?n, PER=?p]
 
 
-VP[SUBCAT=?rest, NUM=?n, TENSE = ?t, PER=?p] -> ADV VP[SUBCAT=[HEAD=?arg, TAIL=?rest], TENSE=?t, NUM=?n, PER=?p]
-VP[SUBCAT=?rest, NUM=?n] -> MOD_P VP[TENSE=?t, SUBCAT=[HEAD=?arg, TAIL=?rest]] ARG[CAT=?arg]
-VP[SUBCAT=?rest, NUM=?n] -> MOD_P VP[TENSE=?t, SUBCAT=[HEAD=?arg, TAIL=?rest]] SUBS[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]]
-VP[SUBCAT=?rest, TENSE = ?t, NUM=?n, PER=?p] -> VP[SUBCAT=[HEAD=?arg, TAIL=?rest, TENSE=?t, NUM=?n, PER=?p]] ARG[CAT=?arg, NUM=?n, PER=?p, TENSE=?t]
-VP[SUBCAT=?args, NUM=?n, TENSE = ?t, PER=?p] -> V[SUBCAT=?args, TENSE = ?t, NUM=?n, PER=?p]
-VP[SUBCAT=?args, NUM=?n, TENSE = ?t, PER=?p] -> TV[SUBCAT= [HEAD=np, TAIL=nil, TENSE=pres, NUM='sg', PER=3]]
-VP[SUBCAT=?args, NUM=?n, TENSE = ?t, PER=?p] -> V[FORM=pres, SUBCAT=clause, -AUX, PER=3]
-VP[SUBCAT=?args, NUM=?n, TENSE = ?t, PER=?p] -> V[SUBCAT=?args, TENSE = ?t, NUM=?n, PER=?p] NP[NUM=?n, PER=?p]
+VP[NUM=?n, TENSE = ?t, PER=?p] -> ADV VP[SUBCAT=[HEAD=?arg, TAIL=?rest], TENSE=?t, NUM=?n, PER=?p]
+VP[TENSE = ?t, NUM=?n, PER=?p] -> TV[SUBCAT=trans, NUM=?n, TENSE = ?t, PER=?p] NP[NUM=?n, PER=?p] ARG[CAT=?arg, NUM=?n, PER=?p, TENSE=?t]
+VP[NUM=?n, TENSE = ?t, PER=?p] -> V[SUBCAT=intrans, TENSE=?t, NUM=?n]
+VP[NUM=?n, TENSE = ?t, PER=?p] -> V[FORM=pres, SUBCAT=clause, -AUX, PER=3]
+VP[NUM=?n, TENSE = ?t, PER=?p] -> TV[SUBCAT=trans, NUM=?n, TENSE = ?t, PER=?p] NP[NUM=?n, PER=?p]
+VP[NUM=?n, TENSE = ?t, PER=?p] -> TV[SUBCAT=trans, NUM=?n, TENSE = ?t, PER=?p]  V[TENSE=prescon, FORM=prespart , SUBCAT=[HEAD=np]] NP[NUM=?n, PER=?p]
 #what salad does Bart think Homer serves Lisa
-VP[SUBCAT=?args, NUM=?n, TENSE = ?t, PER=?p] -> V[SUBCAT=clause, TENSE=pres, NUM=sg] SUBS[SUBCAT=?rest, NUM?=n, PER=?p]
+VP[NUM=?n, TENSE = ?t, PER=?p] -> V[SUBCAT=clause, TENSE=pres, NUM=pl] SUBS[SUBCAT=?rest, NUM?=n, PER=?p]
+VP[NUM=?n, TENSE = ?t, PER=?p] -> V[SUBCAT=clause, TENSE=pres, NUM=sg] SUBS[SUBCAT=?rest, NUM?=n, PER=?p]
+VP[NUM=?n, TENSE = ?t, PER=?p] -> MOD_P V[TENSE=pastpart, SUBCAT=intrans]
+VP[NUM=?n, TENSE = ?t, PER=?p] -> MOD_P V[TENSE=pastpart, SUBCAT=trans] NP[NUM=?n, PER=?p]
+TV[SUBCAT=trans, NUM=?n, TENSE = ?t, PER=?p] -> V[SUBCAT= trans, TENSE=pres, NUM='sg', PER=3]
+TV[SUBCAT=trans, NUM=?n, TENSE = ?t, PER=?p] -> V[SUBCAT= trans, TENSE=pres, NUM='pl']
+TV[SUBCAT=trans, NUM=?n, TENSE = ?t, PER=?p] -> V[TENSE=past, SUBCAT=trans, NUM=?n, PER=?p]
+VP[NUM=?n, TENSE = ?t, PER=?p] -> V[SUBCAT=clause, TENSE=pres, NUM=sg]
+VP[NUM=?n, TENSE = ?t, PER=?p] -> V[SUBCAT=clause, TENSE=pres, NUM=pl]
+VP[NUM=?n, TENSE = ?t, PER=?p] -> V[TENSE=prescon, FORM=prespart , SUBCAT=[HEAD=np]]
+
 
 
 # i.e. may have | may not have
-MOD_P -> MOD AUX[NUM='pl'] |  MOD ADV AUX[NUM='pl']
+MOD_P -> MOD AUX[NUM='pl'] |  MOD NEG AUX[NUM='pl']
 
 NP[NUM=?n, PER=?p] -> ADJP[NUM=?n, PER=?p] Noun[NUM=?n, PER=?p]
 ADJP[SUBCAT=?rest, TENSE = ?t, NUM=?n, PER=?p] -> ADJ
@@ -63,13 +66,9 @@ PP[NUM=?n, TENSE=?t, PER=?p] -> PREP[NUM=?n, TENSE=?t, PER=?p] DET NP[NUM=?n, PE
 
 ARG[CAT=np, NUM=?n, PER=?p] -> NP[NUM = ?n, PER=?p]
 ARG[CAT=adjunct, HEAD=[NUM=?n, PER=?p, TENSE = ?t]] -> ADJP[SUBCAT=[HEAD=[NUM=?n, PER=?p, TENSE=?t]]]
-ARG[CAT=v, NUM=?n, PER=?p, TENSE = ?t] -> V[NUM=?n, PER=?p, TENSE = ?t]
+ARG[CAT=v, NUM=?n, PER=?p, TENSE = ?t] -> V[SUBCAT=intrans, TENSE=?t, NUM=?n]
 ARG[CAT=pp, NUM=?n, PER=?p, TENSE = ?t] -> PP[NUM=?n, PER=?p, TENSE = ?t] ARG[CAT=pp, NUM=?n, PER=?p, TENSE = ?t]
 ARG[CAT=pp, NUM=?n, PER=?p, TENSE = ?t] -> PP[NUM=?n, PER=?p, TENSE = ?t]
-
-# i.e. #Homer serves Lisa and Bart a healthy green salad
-NPARG[NUM=?n, PER=?p] -> ProperNoun[NUM=?n, PER=?p] Noun[NUM=?n, PER=?p]
-NPARG[NUM=?n, PER=?p] -> ProperNoun[NUM=?n, PER=?p] DET Noun[NUM=?n, PER=?p]
 
 
 ProperNoun[NUM='sg', PER = 3] -> 'Lisa' | 'Bart' | 'Homer'
@@ -77,40 +76,35 @@ Noun[NUM='sg'] -> 'milk' | 'salad' | 'lunch' | 'kitchen'
 Noun[NUM='pl'] -> 'shoes'
 
 ADJ -> 'blue' | 'healthy' | 'green'
-ADV -> 'always' | 'never' | 'not'
+ADV -> 'always' | 'never'
 
-# verb present
-V[SUBCAT= [HEAD=np, TAIL=[HEAD=pp, TAIL = nil], PER=3]] -> 'wears' | 'likes'
-TV[SUBCAT= [HEAD=np, TAIL=nil, TENSE=pres, NUM='sg', PER=3]] -> 'serves' | 'drinks' | 'puts' | 'thinks'
-V[SUBCAT = [HEAD=np, TAIL=[HEAD=V, TAIL = [HEAD=pp, TAIL=nil, PER=3]]]] -> 'puts'
-#V[SUBCAT= [HEAD=np, TAIL=nil, TENSE=pres, NUM='sg', PER=3]] -> 'puts'
 
-# v.t + present +np
-V[SUBCAT= [HEAD=np, TAIL= nil, TENSE=pres, NUM='pl']] -> 'serve' | 'drink' | 'wear' | 'put'
+V[FORM=pres, SUBCAT=intrans] -> 'serve' | 'drink' | 'put' | 'wear' | 'like'
+# trasnsive verbs present
+V[SUBCAT= trans, TENSE=pres, NUM='sg', PER=3] -> 'serves' | 'drinks' | 'puts' | 'wears' | 'likes'
+V[SUBCAT= trans, TENSE=pres, NUM='pl'] -> 'serve' | 'drink' | 'put' | 'wear' | 'like'
 # v.i + present+sg
-V[FORM=pres, NUM='sg', SUBCAT=nil] -> 'giggles'
+V[FORM=pres, NUM='sg', SUBCAT=intrans] -> 'giggles'
 # v.t + sg+ present + clause
-#V[FORM=pres, SUBCAT=clause, -AUX, PER=3] -> 'thinks'
 V[SUBCAT=clause, TENSE=pres, NUM=sg] -> 'thinks'
 V[SUBCAT=clause, TENSE=pres, NUM=pl] -> 'think'
 
 # verb - past
-V[SUBCAT= [HEAD=np, TAIL=nil]] -> 'drank'
-V[TENSE=past, SUBCAT=nil] -> 'giggled'
+V[TENSE=past, SUBCAT=trans, NUM=?n, PER=?p] -> 'drank'
+V[TENSE=past, SUBCAT=intrans] -> 'giggled'
 
 # verb - present participle
-V[TENSE=prescon, FORM=prespart , SUBCAT=[HEAD=np,TAIL=nil]] -> 'drinking'
+V[TENSE=prescon, FORM=prespart , SUBCAT=[HEAD=np]] -> 'drinking'
 
 # verb - past participle
-V[TENSE=pastpart, SUBCAT=[HEAD=np,TAIL=nil]] -> 'served'
-V[TENSE=pastpart, SUBCAT=[TAIL=nil]] -> 'giggled'
+V[TENSE=pastpart, SUBCAT=trans] -> 'served'
+V[TENSE=pastpart, SUBCAT=intrans] -> 'giggled'
 
 
-#MOD_P -> MOD AUX[NUM='pl'] |  MOD ADV AUX[NUM='pl']
-MOD -> 'may'
+#MOD_P -> MOD AUX[FORM=base]  |  MOD NEG AUX[FORM=base]
+MOD -> 'may' | 'can' | 'could' | 'should'
 
-CONJ -> 'and'
-CONJ -> 'when'
+CONJ -> 'and' | 'when' | 'like'
 
 DET[NUM=sg] -> 'a' | 'the'
 DET[NUM=pl] -> 'the'
@@ -118,11 +112,13 @@ DET[NUM=pl] -> 'the'
 # Auxiliary verbs
 AUX[SUBCAT=aux, NUM = 'sg', PER = 3] -> 'does'
 AUX[SUBCAT=aux, NUM = 'pl'] -> 'do'
-AUX[NUM='pl'] -> 'have'
+AUX[FORM=base] -> 'have'
 
 # Special adverbs
 WH -> 'when' | 'what' | 'whom' | 'where'
 
-PREP -> 'in' | 'after'
+PREP -> 'in' | 'after' | 'like'
 
 TO -> 'to'
+
+NEG -> 'not'
