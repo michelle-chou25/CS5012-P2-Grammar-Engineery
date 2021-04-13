@@ -1,21 +1,15 @@
 S -> NP[NUM=?n, PER=?p] VP[NUM=?n, TENSE = ?t, PER=?p]
-# when do Lisa and Bart wear shoes
-S -> WH AUX[SUBCAT=aux, NUM = 'pl'] SUBS[SUBCAT=?rest, NUM=?n, PER=?p]
 S -> WH AUX[NUM=?n, PER=?p] NP[NUM=?n, PER=?p] VP[NUM=?n, TENSE = ?t, PER=?p]
 S -> WH NP[SUBCAT=[HEAD=[NUM=?n, PER=?p]]] VP[NUM=?n, TENSE = ?t, PER=?p] SUBS[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]]
 S -> WH AUX[NUM=?n, PER=?p] SUBS[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]]
 S -> SUBS[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]] CONJ_S[SUBCAT=nil, HEAD=[NUM=?n, PER=?p]]
 S -> ProperNoun[NUM=?n, PER=?p] MOD_P V[TENSE=pastpart, SUBCAT=[HEAD=np,TAIL=nil]] ProperNoun[NUM=?n, PER=?p]
-S -> WH NP[NUM=?n, PER=?p] AUX[SUBCAT=aux, NUM = 'sg', PER = 3] NP[NUM=?n, PER=?p] VP[SUBCAT=?rest, NUM=?n, TENSE = ?t, PER=?p]
 S -> WH NP[NUM=?n, PER=?p] AUX[SUBCAT=aux, NUM = 'sg', PER = 3] NP[SUBCAT=[HEAD=[NUM=?n, PER=?p]]] VP[NUM=?n, TENSE = ?t, PER=?p]
-#what does Lisa put in the kitchen
 S -> WH NP[NUM=?n, PER=?p] AUX[NUM=?n, PER=?p] NP[NUM=?n, PER=?p] VP[SUBCAT=?rest, TENSE = ?t, NUM=?n, PER=?p] SUBS[SUBCAT=?rest, NUM?=n, PER=?p]
 S -> NP[NUM=?n, PER=?p] VP[NUM=?n, TENSE = ?t, PER=?p] SUBS[SUBCAT=?rest, NUM?=n, PER=?p]
-#what salad does Bart serve
 S -> WH NP[NUM=?n, PER=?p] AUX[NUM=?n, PER=?p] NP[NUM=?n, PER=?p] V[FORM=pres, SUBCAT=intrans]
 S -> NP[NUM=?n, PER=?p] MOD_P VP[NUM=?n, TENSE = ?t, PER=?p]
 S -> WH AUX[SUBCAT=aux, NUM = 'sg', PER = 3] NP[NUM=?n, PER=?p]  V[FORM=pres, SUBCAT=intrans]  PP[NUM=?n, PER=?p, TENSE = ?t]
-
 
 
 # subsentence
@@ -51,10 +45,6 @@ VP[NUM=?n, TENSE = ?t, PER=?p] -> V[SUBCAT=clause, TENSE=pres, NUM=pl]
 VP[NUM=?n, TENSE = ?t, PER=?p] -> V[TENSE=prescon, FORM=prespart , SUBCAT=[HEAD=np]]
 
 
-
-# i.e. may have | may not have
-MOD_P -> MOD AUX[NUM='pl'] |  MOD NEG AUX[NUM='pl']
-
 NP[NUM=?n, PER=?p] -> ADJP[NUM=?n, PER=?p] Noun[NUM=?n, PER=?p]
 ADJP[SUBCAT=?rest, TENSE = ?t, NUM=?n, PER=?p] -> ADJ
 ADJP[SUBCAT=?rest, TENSE = ?t, NUM=?n, PER=?p] -> DET[NUM=?n] ADJ ARG
@@ -75,11 +65,11 @@ ProperNoun[NUM='sg', PER = 3] -> 'Lisa' | 'Bart' | 'Homer'
 Noun[NUM='sg'] -> 'milk' | 'salad' | 'lunch' | 'kitchen'
 Noun[NUM='pl'] -> 'shoes'
 
-ADJ -> 'blue' | 'healthy' | 'green'
+ADJ -> 'blue' | 'healthy' | 'green' | 'big' | 'English'
 ADV -> 'always' | 'never'
 
 
-V[FORM=pres, SUBCAT=intrans] -> 'serve' | 'drink' | 'put' | 'wear' | 'like'
+V[FORM=pres, SUBCAT=intrans] -> 'serve' | 'drink' | 'put' | 'wear' | 'like' | 'eat'
 # trasnsive verbs present
 V[SUBCAT= trans, TENSE=pres, NUM='sg', PER=3] -> 'serves' | 'drinks' | 'puts' | 'wears' | 'likes'
 V[SUBCAT= trans, TENSE=pres, NUM='pl'] -> 'serve' | 'drink' | 'put' | 'wear' | 'like'
@@ -100,8 +90,8 @@ V[TENSE=prescon, FORM=prespart , SUBCAT=[HEAD=np]] -> 'drinking'
 V[TENSE=pastpart, SUBCAT=trans] -> 'served'
 V[TENSE=pastpart, SUBCAT=intrans] -> 'giggled'
 
-
-#MOD_P -> MOD AUX[FORM=base]  |  MOD NEG AUX[FORM=base]
+# i.e. may have | may not have
+MOD_P -> MOD AUX[FORM=base]  |  MOD NEG AUX[FORM=base]
 MOD -> 'may' | 'can' | 'could' | 'should'
 
 CONJ -> 'and' | 'when' | 'like'
