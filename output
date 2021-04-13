@@ -1,0 +1,1420 @@
+C:\Users\Michelle\anaconda3\python.exe D:/CS5012/P2GrammarEngineering/P2.py
+================ Positive examples ================
+Bart giggles
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (V[FORM='pres', NUM='sg', SUBCAT='intrans'] giggles)))
+Homer giggled
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+  (VP[NUM=?n, PER=?p, TENSE='pastpart']
+    (V[SUBCAT='intrans', TENSE='pastpart'] giggled)))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+  (VP[NUM=?n, PER=?p, TENSE='past']
+    (V[SUBCAT='intrans', TENSE='past'] giggled)))
+Bart and Lisa drank milk
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Bart)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM=?n, PER=?p, SUBCAT='trans', TENSE='past'] drank))
+    (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))))
+Bart wears blue shoes
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] wears))
+    (NP[NUM=?n, PER=?p]
+      (ADJP[NUM=?n, PER=?p, SUBCAT=?rest, TENSE=?t] (ADJ[] blue))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='pl'] shoes)))))
+Homer serves Lisa and Bart a healthy green salad
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+  (VP[NUM='sg', PER=3, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] serves))
+    (NP[NUM='sg', PER=3]
+      (ProperNoun[NUM='sg', PER=3] Lisa)
+      (CONJ[] and)
+      (ProperNoun[NUM='sg', PER=3] Bart))
+    (ARG[CAT='np', NUM='sg', PER=?p]
+      (NP[NUM='sg', PER=?p]
+        (ADJP[NUM='sg', PER=?p, SUBCAT=?rest, TENSE=?t]
+          (DET[NUM='sg'] a)
+          (ADJ[] healthy)
+          (ARG[CAT='adjunct', HEAD=[NUM=?n, PER=?p, TENSE=?t]]
+            (ADJP[NUM=?n, PER=?p, SUBCAT=?rest, TENSE=?t]
+              (ADJ[] green))))
+        (Noun[NUM='sg'] salad)))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+  (VP[NUM='sg', PER=3, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] serves))
+    (NP[NUM='sg', PER=3]
+      (ProperNoun[NUM='sg', PER=3] Lisa)
+      (CONJ[] and)
+      (ProperNoun[NUM='sg', PER=3] Bart))
+    (ARG[CAT='np', NUM='sg', PER=?p]
+      (NP[NUM='sg', PER=?p]
+        (ADJP[NUM='sg', PER=?p, SUBCAT=?rest, TENSE=?t]
+          (DET[NUM='sg'] a)
+          (ADJ[] healthy)
+          (ARG[CAT='adjunct', HEAD=[NUM=?n, PER=?p, TENSE=?t]]
+            (ADJP[NUM=?n, PER=?p, SUBCAT=?rest, TENSE=?t]
+              (ADJ[] green))))
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] salad))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+  (VP[NUM='sg', PER=3, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] serves))
+    (NP[NUM='sg', PER=3]
+      (ProperNoun[NUM='sg', PER=3] Lisa)
+      (CONJ[] and)
+      (ProperNoun[NUM='sg', PER=3] Bart))
+    (ARG[CAT='adjunct', HEAD=[NUM=?n, PER=?p, TENSE=?t]]
+      (ADJP[NUM='sg', PER=?p, SUBCAT=?rest, TENSE=?t]
+        (DET[NUM='sg'] a)
+        (ADJ[] healthy)
+        (ARG[CAT='np', NUM='sg', PER=?p]
+          (NP[NUM='sg', PER=?p]
+            (ADJP[NUM=?n, PER=?p, SUBCAT=?rest, TENSE=?t]
+              (ADJ[] green))
+            (Noun[NUM='sg'] salad)))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+  (VP[NUM='sg', PER=3, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] serves))
+    (NP[NUM='sg', PER=3]
+      (ProperNoun[NUM='sg', PER=3] Lisa)
+      (CONJ[] and)
+      (ProperNoun[NUM='sg', PER=3] Bart))
+    (ARG[CAT='adjunct', HEAD=[NUM=?n, PER=?p, TENSE=?t]]
+      (ADJP[NUM='sg', PER=?p, SUBCAT=?rest, TENSE=?t]
+        (DET[NUM='sg'] a)
+        (ADJ[] healthy)
+        (ARG[CAT='np', NUM=?n, PER=?p]
+          (NP[NUM=?n, PER=?p]
+            (ADJP[NUM=?n, PER=?p, SUBCAT=?rest, TENSE=?t]
+              (ADJ[] green))
+            (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] salad))))))))
+Bart always drinks milk
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (ADV[] always)
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] drinks))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk)))))
+Lisa thinks Homer thinks Bart drinks milk
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (V[NUM='sg', SUBCAT='clause', TENSE='pres'] thinks)
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+      (VP[NUM=?n, PER=?p, TENSE=?t]
+        (V[NUM='sg', SUBCAT='clause', TENSE='pres'] thinks))))
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] drinks))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk)))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (V[NUM='sg', SUBCAT='clause', TENSE='pres'] thinks)
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+      (VP[NUM=?n, PER=?p, TENSE=?t]
+        (V[NUM='sg', SUBCAT='clause', TENSE='pres'] thinks))))
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] drinks))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk)))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (V[NUM='sg', SUBCAT='clause', TENSE='pres'] thinks))
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (V[NUM='sg', SUBCAT='clause', TENSE='pres'] thinks)
+      (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+        (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+        (VP[NUM=?n, PER=?p, TENSE=?t]
+          (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+            (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] drinks))
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk)))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (V[NUM='sg', SUBCAT='clause', TENSE='pres'] thinks))
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (V[NUM='sg', SUBCAT='clause', TENSE='pres'] thinks)
+      (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+        (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+        (VP[NUM=?n, PER=?p, TENSE=?t]
+          (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+            (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] drinks))
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk)))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (V[NUM='sg', SUBCAT='clause', TENSE='pres'] thinks)
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+      (VP[NUM=?n, PER=?p, TENSE=?t]
+        (V[NUM='sg', SUBCAT='clause', TENSE='pres'] thinks)
+        (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+          (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+          (VP[NUM=?n, PER=?p, TENSE=?t]
+            (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+              (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres']
+                drinks))
+            (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))))))))
+Homer and Bart never drink milk in the kitchen after lunch
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p]
+        (NP[NUM=?n, PER=?p]
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+          (PP[NUM=?n, PER=?p, TENSE=?t]
+            (PREP[] in)
+            (DET[NUM='pl'] the)
+            (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] after)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p]
+        (NP[NUM=?n, PER=?p]
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+          (PP[NUM=?n, PER=?p, TENSE=?t]
+            (PREP[] in)
+            (DET[NUM='sg'] the)
+            (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] after)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p]
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] in)
+          (DET[NUM='pl'] the)
+          (NP[NUM=?n, PER=?p]
+            (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))
+            (PP[NUM=?n, PER=?p, TENSE=?t]
+              (PREP[] after)
+              (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p]
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] in)
+          (DET[NUM='sg'] the)
+          (NP[NUM=?n, PER=?p]
+            (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))
+            (PP[NUM=?n, PER=?p, TENSE=?t]
+              (PREP[] after)
+              (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] in)
+          (DET[NUM='pl'] the)
+          (NP[NUM=?n, PER=?p]
+            (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))
+            (PP[NUM=?n, PER=?p, TENSE=?t]
+              (PREP[] after)
+              (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] in)
+          (DET[NUM='sg'] the)
+          (NP[NUM=?n, PER=?p]
+            (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))
+            (PP[NUM=?n, PER=?p, TENSE=?t]
+              (PREP[] after)
+              (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p]
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] in)
+          (DET[NUM='pl'] the)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))
+      (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] after)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p]
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] in)
+          (DET[NUM='sg'] the)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))
+      (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] after)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] in)
+          (DET[NUM='pl'] the)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen)))
+        (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+          (PP[NUM=?n, PER=?p, TENSE=?t]
+            (PREP[] after)
+            (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch))))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] in)
+          (DET[NUM='sg'] the)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen)))
+        (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+          (PP[NUM=?n, PER=?p, TENSE=?t]
+            (PREP[] after)
+            (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch))))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM='sg', PER=?p]
+        (NP[NUM='sg', PER=?p]
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+          (PP[NUM='sg', PER=?p, TENSE=?t]
+            (PREP[] in)
+            (NP[NUM='sg', PER=?p]
+              (DET[NUM='pl'] the)
+              (Noun[NUM='sg'] kitchen))))
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] after)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM='sg', PER=?p]
+        (NP[NUM='sg', PER=?p]
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+          (PP[NUM='sg', PER=?p, TENSE=?t]
+            (PREP[] in)
+            (NP[NUM='sg', PER=?p]
+              (DET[NUM='sg'] the)
+              (Noun[NUM='sg'] kitchen))))
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] after)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM='sg', PER=?p]
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+        (PP[NUM='sg', PER=?p, TENSE=?t]
+          (PREP[] in)
+          (NP[NUM='sg', PER=?p]
+            (NP[NUM='sg', PER=?p]
+              (DET[NUM='pl'] the)
+              (Noun[NUM='sg'] kitchen))
+            (PP[NUM=?n, PER=?p, TENSE=?t]
+              (PREP[] after)
+              (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM='sg', PER=?p]
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+        (PP[NUM='sg', PER=?p, TENSE=?t]
+          (PREP[] in)
+          (NP[NUM='sg', PER=?p]
+            (NP[NUM='sg', PER=?p]
+              (DET[NUM='sg'] the)
+              (Noun[NUM='sg'] kitchen))
+            (PP[NUM=?n, PER=?p, TENSE=?t]
+              (PREP[] after)
+              (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (ARG[CAT='pp', NUM='sg', PER=?p, TENSE=?t]
+        (PP[NUM='sg', PER=?p, TENSE=?t]
+          (PREP[] in)
+          (NP[NUM='sg', PER=?p]
+            (NP[NUM='sg', PER=?p]
+              (DET[NUM='pl'] the)
+              (Noun[NUM='sg'] kitchen))
+            (PP[NUM=?n, PER=?p, TENSE=?t]
+              (PREP[] after)
+              (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (ARG[CAT='pp', NUM='sg', PER=?p, TENSE=?t]
+        (PP[NUM='sg', PER=?p, TENSE=?t]
+          (PREP[] in)
+          (NP[NUM='sg', PER=?p]
+            (NP[NUM='sg', PER=?p]
+              (DET[NUM='sg'] the)
+              (Noun[NUM='sg'] kitchen))
+            (PP[NUM=?n, PER=?p, TENSE=?t]
+              (PREP[] after)
+              (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM='sg', PER=?p]
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+        (PP[NUM='sg', PER=?p, TENSE=?t]
+          (PREP[] in)
+          (NP[NUM='sg', PER=?p]
+            (DET[NUM='pl'] the)
+            (Noun[NUM='sg'] kitchen))))
+      (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] after)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM='sg', PER=?p]
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+        (PP[NUM='sg', PER=?p, TENSE=?t]
+          (PREP[] in)
+          (NP[NUM='sg', PER=?p]
+            (DET[NUM='sg'] the)
+            (Noun[NUM='sg'] kitchen))))
+      (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] after)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch)))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (ARG[CAT='pp', NUM='sg', PER=?p, TENSE=?t]
+        (PP[NUM='sg', PER=?p, TENSE=?t]
+          (PREP[] in)
+          (NP[NUM='sg', PER=?p]
+            (DET[NUM='pl'] the)
+            (Noun[NUM='sg'] kitchen)))
+        (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+          (PP[NUM=?n, PER=?p, TENSE=?t]
+            (PREP[] after)
+            (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch))))))))
+(S[]
+  (NP[NUM='sg', PER=3]
+    (ProperNoun[NUM='sg', PER=3] Homer)
+    (CONJ[] and)
+    (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (ADV[] never)
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (ARG[CAT='pp', NUM='sg', PER=?p, TENSE=?t]
+        (PP[NUM='sg', PER=?p, TENSE=?t]
+          (PREP[] in)
+          (NP[NUM='sg', PER=?p]
+            (DET[NUM='sg'] the)
+            (Noun[NUM='sg'] kitchen)))
+        (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+          (PP[NUM=?n, PER=?p, TENSE=?t]
+            (PREP[] after)
+            (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] lunch))))))))
+when does Lisa drink milk in the kitchen
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM='sg', PER=?p, SUBCAT=?rest]
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+      (VP[NUM=?n, PER=?p, TENSE=?t]
+        (V[FORM='pres', SUBCAT='intrans'] drink)))
+    (NP[NUM='sg', PER=?p]
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='pl'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM='sg', PER=?p, SUBCAT=?rest]
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+      (VP[NUM=?n, PER=?p, TENSE=?t]
+        (V[FORM='pres', SUBCAT='intrans'] drink)))
+    (NP[NUM='sg', PER=?p]
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='sg'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM='sg', PER=?p]
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+        (PP[NUM='sg', PER=?p, TENSE=?t]
+          (PREP[] in)
+          (NP[NUM='sg', PER=?p]
+            (DET[NUM='pl'] the)
+            (Noun[NUM='sg'] kitchen)))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM='sg', PER=?p]
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+        (PP[NUM='sg', PER=?p, TENSE=?t]
+          (PREP[] in)
+          (NP[NUM='sg', PER=?p]
+            (DET[NUM='sg'] the)
+            (Noun[NUM='sg'] kitchen)))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (ARG[CAT='pp', NUM='sg', PER=?p, TENSE=?t]
+        (PP[NUM='sg', PER=?p, TENSE=?t]
+          (PREP[] in)
+          (NP[NUM='sg', PER=?p]
+            (DET[NUM='pl'] the)
+            (Noun[NUM='sg'] kitchen)))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (ARG[CAT='pp', NUM='sg', PER=?p, TENSE=?t]
+        (PP[NUM='sg', PER=?p, TENSE=?t]
+          (PREP[] in)
+          (NP[NUM='sg', PER=?p]
+            (DET[NUM='sg'] the)
+            (Noun[NUM='sg'] kitchen)))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p]
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] in)
+          (DET[NUM='pl'] the)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen)))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p]
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] in)
+          (DET[NUM='sg'] the)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen)))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] in)
+          (DET[NUM='pl'] the)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen)))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+        (PP[NUM=?n, PER=?p, TENSE=?t]
+          (PREP[] in)
+          (DET[NUM='sg'] the)
+          (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen)))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+      (VP[NUM=?n, PER=?p, TENSE=?t]
+        (V[FORM='pres', SUBCAT='intrans'] drink)))
+    (NP[NUM=?n, PER=?p]
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='pl'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+      (VP[NUM=?n, PER=?p, TENSE=?t]
+        (V[FORM='pres', SUBCAT='intrans'] drink)))
+    (NP[NUM=?n, PER=?p]
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='sg'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+    (NP[NUM='sg', PER=?p]
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='pl'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+    (NP[NUM='sg', PER=?p]
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='sg'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+    (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+    (ARG[CAT='pp', NUM='sg', PER=?p, TENSE=?t]
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='pl'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+    (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+    (ARG[CAT='pp', NUM='sg', PER=?p, TENSE=?t]
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='sg'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+    (NP[NUM=?n, PER=?p]
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='pl'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+    (NP[NUM=?n, PER=?p]
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='sg'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+    (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+    (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='pl'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='pl', SUBCAT='trans', TENSE='pres'] drink))
+    (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))
+    (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='sg'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+when Homer drinks milk Bart giggles
+(S[]
+  (WH[] when)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] drinks))
+    (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk)))
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (V[FORM='pres', NUM='sg', SUBCAT='intrans'] giggles))))
+when do Lisa and Bart wear shoes
+(S[]
+  (WH[] when)
+  (AUX[NUM='pl', SUBCAT='aux'] do)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3]
+        (ProperNoun[NUM='sg', PER=3] Lisa)
+        (CONJ[] and)
+        (ProperNoun[NUM='sg', PER=3] Bart))
+      (VP[NUM=?n, PER=?p, TENSE=?t]
+        (V[FORM='pres', SUBCAT='intrans'] wear)))
+    (NP[NUM=?n, PER=?p] (Noun[NUM='pl'] shoes))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='pl', SUBCAT='aux'] do)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3]
+      (ProperNoun[NUM='sg', PER=3] Lisa)
+      (CONJ[] and)
+      (ProperNoun[NUM='sg', PER=3] Bart))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] wear))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='pl'] shoes)))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='pl', SUBCAT='aux'] do)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3]
+        (ProperNoun[NUM='sg', PER=3] Lisa)
+        (CONJ[] and)
+        (ProperNoun[NUM='sg', PER=3] Bart))
+      (VP[NUM=?n, PER=?p, TENSE=?t]
+        (V[FORM='pres', SUBCAT='intrans'] wear)))
+    (NP[NUM=?n, PER=?p] (Noun[NUM='pl'] shoes))))
+(S[]
+  (WH[] when)
+  (AUX[NUM='pl', SUBCAT='aux'] do)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3]
+      (ProperNoun[NUM='sg', PER=3] Lisa)
+      (CONJ[] and)
+      (ProperNoun[NUM='sg', PER=3] Bart))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] wear))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='pl'] shoes)))))
+Lisa puts the milk in the kitchen
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p]
+      (NP[NUM='sg', PER=?p]
+        (DET[NUM='pl'] the)
+        (Noun[NUM='sg'] milk))
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='pl'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p]
+      (NP[NUM='sg', PER=?p]
+        (DET[NUM='pl'] the)
+        (Noun[NUM='sg'] milk))
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='sg'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p]
+      (NP[NUM='sg', PER=?p]
+        (DET[NUM='sg'] the)
+        (Noun[NUM='sg'] milk))
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='pl'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p]
+      (NP[NUM='sg', PER=?p]
+        (DET[NUM='sg'] the)
+        (Noun[NUM='sg'] milk))
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='sg'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p]
+      (NP[NUM='sg', PER=?p]
+        (DET[NUM='pl'] the)
+        (Noun[NUM='sg'] milk))
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='pl'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p]
+      (NP[NUM='sg', PER=?p]
+        (DET[NUM='pl'] the)
+        (Noun[NUM='sg'] milk))
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='sg'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p]
+      (NP[NUM='sg', PER=?p]
+        (DET[NUM='sg'] the)
+        (Noun[NUM='sg'] milk))
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='pl'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p]
+      (NP[NUM='sg', PER=?p]
+        (DET[NUM='sg'] the)
+        (Noun[NUM='sg'] milk))
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='sg'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p] (DET[NUM='pl'] the) (Noun[NUM='sg'] milk))
+    (ARG[CAT='pp', NUM='sg', PER=?p, TENSE=?t]
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='pl'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p] (DET[NUM='pl'] the) (Noun[NUM='sg'] milk))
+    (ARG[CAT='pp', NUM='sg', PER=?p, TENSE=?t]
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='sg'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p] (DET[NUM='sg'] the) (Noun[NUM='sg'] milk))
+    (ARG[CAT='pp', NUM='sg', PER=?p, TENSE=?t]
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='pl'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p] (DET[NUM='sg'] the) (Noun[NUM='sg'] milk))
+    (ARG[CAT='pp', NUM='sg', PER=?p, TENSE=?t]
+      (PP[NUM='sg', PER=?p, TENSE=?t]
+        (PREP[] in)
+        (NP[NUM='sg', PER=?p]
+          (DET[NUM='sg'] the)
+          (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p] (DET[NUM='pl'] the) (Noun[NUM='sg'] milk))
+    (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='pl'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p] (DET[NUM='pl'] the) (Noun[NUM='sg'] milk))
+    (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='sg'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p] (DET[NUM='sg'] the) (Noun[NUM='sg'] milk))
+    (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='pl'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] puts))
+    (NP[NUM='sg', PER=?p] (DET[NUM='sg'] the) (Noun[NUM='sg'] milk))
+    (ARG[CAT='pp', NUM=?n, PER=?p, TENSE=?t]
+      (PP[NUM=?n, PER=?p, TENSE=?t]
+        (PREP[] in)
+        (DET[NUM='sg'] the)
+        (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))))
+Bart likes drinking milk
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] likes))
+    (V[FORM='prespart', SUBCAT=[HEAD='np'], TENSE='prescon']
+      drinking)
+    (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] milk))))
+Lisa may have giggled
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (MOD_P[] (MOD[] may) (AUX[FORM='base'] have))
+    (V[SUBCAT='intrans', TENSE='pastpart'] giggled)))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (MOD_P[] (MOD[] may) (AUX[FORM='base'] have))
+  (VP[NUM=?n, PER=?p, TENSE='pastpart']
+    (V[SUBCAT='intrans', TENSE='pastpart'] giggled)))
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (MOD_P[] (MOD[] may) (AUX[FORM='base'] have))
+  (VP[NUM=?n, PER=?p, TENSE='past']
+    (V[SUBCAT='intrans', TENSE='past'] giggled)))
+Lisa may not have served Bart
+(S[]
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=3, TENSE=?t]
+    (MOD_P[] (MOD[] may) (NEG[] not) (AUX[FORM='base'] have))
+    (V[SUBCAT='trans', TENSE='pastpart'] served)
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))))
+what does Homer drink
+(S[]
+  (WH[] what)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (V[FORM='pres', SUBCAT='intrans'] drink)))
+(S[]
+  (WH[] what)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (V[FORM='pres', SUBCAT='intrans'] drink))))
+what salad does Bart serve
+(S[]
+  (WH[] what)
+  (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] salad))
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+  (V[FORM='pres', SUBCAT='intrans'] serve))
+(S[]
+  (WH[] what)
+  (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] salad))
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (V[FORM='pres', SUBCAT='intrans'] serve)))
+(S[]
+  (WH[] what)
+  (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] salad))
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (V[FORM='pres', SUBCAT='intrans'] serve)))
+whom does Homer serve salad
+(S[]
+  (WH[] whom)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+      (VP[NUM=?n, PER=?p, TENSE=?t]
+        (V[FORM='pres', SUBCAT='intrans'] serve)))
+    (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] salad))))
+(S[]
+  (WH[] whom)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] serve))
+      (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] salad)))))
+(S[]
+  (WH[] whom)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='pl', SUBCAT='trans', TENSE='pres'] serve))
+    (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] salad))))
+whom do Homer and Lisa serve
+(S[]
+  (WH[] whom)
+  (AUX[NUM='pl', SUBCAT='aux'] do)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3]
+      (ProperNoun[NUM='sg', PER=3] Homer)
+      (CONJ[] and)
+      (ProperNoun[NUM='sg', PER=3] Lisa))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (V[FORM='pres', SUBCAT='intrans'] serve))))
+(S[]
+  (WH[] whom)
+  (AUX[NUM='pl', SUBCAT='aux'] do)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3]
+      (ProperNoun[NUM='sg', PER=3] Homer)
+      (CONJ[] and)
+      (ProperNoun[NUM='sg', PER=3] Lisa))
+    (VP[NUM=?n, PER=?p, TENSE=?t]
+      (V[FORM='pres', SUBCAT='intrans'] serve))))
+where does Lisa put the milk
+(S[]
+  (WH[] where)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM='sg', PER=?p, SUBCAT=?rest]
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+      (VP[NUM=?n, PER=?p, TENSE=?t]
+        (V[FORM='pres', SUBCAT='intrans'] put)))
+    (NP[NUM='sg', PER=?p] (DET[NUM='pl'] the) (Noun[NUM='sg'] milk))))
+(S[]
+  (WH[] where)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM='sg', PER=?p, SUBCAT=?rest]
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+      (VP[NUM=?n, PER=?p, TENSE=?t]
+        (V[FORM='pres', SUBCAT='intrans'] put)))
+    (NP[NUM='sg', PER=?p] (DET[NUM='sg'] the) (Noun[NUM='sg'] milk))))
+(S[]
+  (WH[] where)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] put))
+      (NP[NUM='sg', PER=?p]
+        (DET[NUM='pl'] the)
+        (Noun[NUM='sg'] milk)))))
+(S[]
+  (WH[] where)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+    (VP[NUM='sg', PER=?p, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='pl', SUBCAT='trans', TENSE='pres'] put))
+      (NP[NUM='sg', PER=?p]
+        (DET[NUM='sg'] the)
+        (Noun[NUM='sg'] milk)))))
+(S[]
+  (WH[] where)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='pl', SUBCAT='trans', TENSE='pres'] put))
+    (NP[NUM='sg', PER=?p] (DET[NUM='pl'] the) (Noun[NUM='sg'] milk))))
+(S[]
+  (WH[] where)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (VP[NUM='sg', PER=?p, TENSE=?t]
+    (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+      (V[NUM='pl', SUBCAT='trans', TENSE='pres'] put))
+    (NP[NUM='sg', PER=?p] (DET[NUM='sg'] the) (Noun[NUM='sg'] milk))))
+what does Lisa put in the kitchen
+(S[]
+  (WH[] what)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (V[FORM='pres', SUBCAT='intrans'] put)
+  (PP[NUM='sg', PER=?p, TENSE=?t]
+    (PREP[] in)
+    (NP[NUM='sg', PER=?p]
+      (DET[NUM='pl'] the)
+      (Noun[NUM='sg'] kitchen))))
+(S[]
+  (WH[] what)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (V[FORM='pres', SUBCAT='intrans'] put)
+  (PP[NUM='sg', PER=?p, TENSE=?t]
+    (PREP[] in)
+    (NP[NUM='sg', PER=?p]
+      (DET[NUM='sg'] the)
+      (Noun[NUM='sg'] kitchen))))
+(S[]
+  (WH[] what)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (V[FORM='pres', SUBCAT='intrans'] put)
+  (PP[NUM=?n, PER=?p, TENSE=?t]
+    (PREP[] in)
+    (DET[NUM='pl'] the)
+    (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))
+(S[]
+  (WH[] what)
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))
+  (V[FORM='pres', SUBCAT='intrans'] put)
+  (PP[NUM=?n, PER=?p, TENSE=?t]
+    (PREP[] in)
+    (DET[NUM='sg'] the)
+    (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] kitchen))))
+what salad does Bart think Homer serves Lisa
+(S[]
+  (WH[] what)
+  (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] salad))
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (V[NUM='pl', SUBCAT='clause', TENSE='pres'] think))
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+    (VP[NUM='sg', PER=3, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] serves))
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa)))))
+(S[]
+  (WH[] what)
+  (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] salad))
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (V[NUM='pl', SUBCAT='clause', TENSE='pres'] think))
+  (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+    (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+    (VP[NUM='sg', PER=3, TENSE=?t]
+      (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+        (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] serves))
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa)))))
+(S[]
+  (WH[] what)
+  (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] salad))
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (V[NUM='pl', SUBCAT='clause', TENSE='pres'] think)
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+      (VP[NUM='sg', PER=3, TENSE=?t]
+        (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+          (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] serves))
+        (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))))))
+(S[]
+  (WH[] what)
+  (NP[NUM=?n, PER=?p] (Noun[NUM='sg'] salad))
+  (AUX[NUM='sg', PER=3, SUBCAT='aux'] does)
+  (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Bart))
+  (VP[NUM=?n, PER=?p, TENSE=?t]
+    (V[NUM='pl', SUBCAT='clause', TENSE='pres'] think)
+    (SUBS[NUM=?n, PER=?p, SUBCAT=?rest]
+      (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Homer))
+      (VP[NUM='sg', PER=3, TENSE=?t]
+        (TV[NUM=?n, PER=?p, SUBCAT='trans', TENSE=?t]
+          (V[NUM='sg', PER=3, SUBCAT='trans', TENSE='pres'] serves))
+        (NP[NUM='sg', PER=3] (ProperNoun[NUM='sg', PER=3] Lisa))))))
+================ Negative examples ================
+Bart Bart
+serves Bart Lisa
+serves serves
+serves served serve
+when Bart giggles
+when does Lisa
+Homer puts
+Bart thinks the kitchen
+
+Process finished with exit code 0
